@@ -11,3 +11,5 @@ Como usuário, desejo ser capaz de visualizar minhas notas antigas. Isso me ajud
 USER STORY 3:
 Eu como usuário, deseja ser capaz de deletar notas antigas e inúteis já que as mesmas apenas ocupam espaço e causam confusão.
 
+![alt text](https://github.com/LuisFilipeAraujo/ORM-PYTHON/blob/main/imagens/class_menota.png)
+![alt text](https://github.com/LuisFilipeAraujo/ORM-PYTHON/blob/main/imagens/er_menota.png)
