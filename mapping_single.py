@@ -29,7 +29,7 @@ class User(Base):
     id_user = Column(Integer(), primary_key=True)
     username = Column(String(40), nullable=False, unique=True)
     email = Column(String(80), unique=True, nullable=False)
-    date_created = Column(DateTime(), default=datetime.utcnow)
+    user_date = Column(DateTime(), default=datetime.utcnow)
 
     def __repr__(self):
         return f"<User username={self.username} email={self.email}>"
@@ -39,8 +39,8 @@ class Note(Base):
     __tablename__ = 'notes'
     id_note = Column(Integer(), primary_key=True)
     notename = Column(String(40), nullable=False, unique=True)
-    usernotes = Column(String(80), unique=True, nullable=False)
-    date_created = Column(DateTime(), default=datetime.utcnow)
+    usernotes = Column(String(3000), unique=False, nullable=False)
+    note_date = Column(DateTime(), default=datetime.utcnow)
 
     def __repr__(self):
         return f"<Note notename={self.notename} usernotes={self.usernotes}>"
